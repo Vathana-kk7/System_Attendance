@@ -1,6 +1,5 @@
 
-import api from "../API/Api";
-
+import api from '../API/Api.jsx';
 // Filter
 export const Crude = ({ students, search }) => {
   const filtered = students.filter((s) =>
@@ -57,4 +56,5 @@ export const DeleteStudent = async (id, onSuccess) => {
     alert(error.response?.data?.message);
   }
 };
+
 
